@@ -14,6 +14,7 @@ header {
   font-family: Sofia, cursive;
   font-family: Sofia, cursive;
   text-align: center;
+  style:"background-image: url(./media/kids-on-beach.jpg" ;
 }
 table {
   margin-left: auto;
@@ -41,8 +42,8 @@ p {
   text-align: center;
 }
 .image1 {
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 0%;
+margin-right: 75%;   
   border-style: double ;
   border-color: #801a00 ;
   border-width: 15px ;
