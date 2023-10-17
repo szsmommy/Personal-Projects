@@ -284,7 +284,7 @@ body {
   transform: translateX(0);
 }
 
-.myForm:invalid {
-  border-color:red
-}
 
+strong {
+  text-align: center;
+}
