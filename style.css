@@ -5,6 +5,12 @@ a:active {
   color: #373331;
   font-family: Sophia, cursive;
 }
+
+.img1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   background-color: #25745c;
   color: #0f0500 ;
@@ -14,7 +20,6 @@ header {
   font-family: Sofia, cursive;
   font-family: Sofia, cursive;
   text-align: center;
-  style:"background-image: url(./media/kids-on-beach.jpg" ;
 }
 table {
   margin-left: auto;
@@ -38,12 +43,15 @@ h3 {
   background-color: #003333;
   color:bisque
 }
+
 p {
-  text-align: center;
+  text-align: center ;
+  font-size: 20px ;
 }
+
 .image1 {
   margin-left: 0%;
-margin-right: 75%;   
+  margin-right: 75%;   
   border-style: double ;
   border-color: #801a00 ;
   border-width: 15px ;
@@ -55,7 +63,7 @@ h2 {
 }
 
 .footer{
-   background-color: #003333 ;            
+   background-color: #0a5858 ;            
    height: 100% ;
    width:auto ;
    color: #0f0500 ;
@@ -72,7 +80,7 @@ h2 {
 
 .dark-mode {
   background-color: #333;
-  color: #f0f0f0;
+  color: #e6f0f0;
   transition: all 0.4s ease-in;
 }  
 
@@ -149,17 +157,11 @@ p{
 
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #f0f0f0;
+  background-color: ##0a5858;
   color: #333;
-  transition: all 0.4s ease-in;
+  transition: all 0.8s ease-in;
 }
 
-
-h1 {
-  text-align: center;
-  margin-top: 1.25rem;
-}
 
 
 .container {
@@ -171,8 +173,6 @@ h1 {
   text-align: center;
 }
 
-
-/* Write your CSS below */
 #slider {
   position: relative;
   width: 500px;
@@ -206,7 +206,7 @@ button {
   transition: all 200ms ease-in-out;
 }
 button:hover {
-  background-color: steelblue;
+  background-color: ##0a5858;
 }
 button#prev {
   left: -35px;
@@ -218,3 +218,73 @@ button#next {
   padding: 7px 15px 7px 17px;
 }
 
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  color: ##0a5858;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 3rem;
+}
+
+.subheading {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.item:not(:first-child) {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.item__content {
+  background-color: ##0a5858;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 7rem;
+  border-radius: 7px;
+}
+
+.item > p {
+  text-align: center;
+}
+
+.left {
+  transform-origin: left center;
+  transform: translateX(-50%);
+}
+
+.right {
+  transform-origin: right center;
+  transform: translateX(50%);
+}
+
+.slide-in {
+  opacity: 1 !important;
+  transform: translateX(0);
+}
+
+
+strong {
+  text-align: center;
+}
