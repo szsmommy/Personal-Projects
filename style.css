@@ -27,8 +27,6 @@ table {
   color:#021710;
 }
 
-
-
 h1  {
   font-family: 'Bad Script', cursive;
   border-style: double;
@@ -283,4 +281,11 @@ button#next {
 
 .strong {
   text-align: center;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
 }

@@ -71,6 +71,66 @@
     <br>
     <p>So, by the grace of God and having access to Amazon's career choice program and a lot of hard work, here I am. Over half-way through Correlation One's software development program. I decided internet technology is the world I want to be a part. The incredible evolution taking place with AI and IT as whole is beyond imagination. The directions one can take in the feild are vast and I will still have the ability to be creative in my work and be a part of making others' days better with what I do. I am so excited to have begun my journey into this foreign world and can't wait to see where it leads.</p>          
   </div>
+<h3 class="mapHead";>Where I Come From</h3>
+<!--add flexbox with 2 columns for image and map-->
+<div class="row">
+  <div class="column">
+    <div id="map" style="width: 600px; height: 400px;"></div>
+  </div>
+  <div class="column">
+      <img src="./Media/harneyCounty.png" alt="Image of Vanessa" width: auto;>
+  </div>
+</div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArRiFNSDp_xw3CfytBKkiTJiClG8Nj5xE&callback=initMap&v=weekly"
+      defer></script>
+    <script>
+      function initMap() {
+     
+            const coordinates = { lat: 43.430710, lng: -119.038790 };
+           
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 6,
+                center: coordinates,
+                maxzoom: 4,
+            });
+
+//Marker - Old L5 Ranch Headquarters
+
+const markerl5 = new google.maps.Marker({
+               position: coordinates,
+               map: map,
+           });
+
+
+
+// circle showing the ranch I grew up on
+const circle = new google.maps.Circle({
+                    strokeColor: "blue",
+                    strokeOpacity: 0.8,
+                    strokeWeight: 2,
+                    fillColor: "#FFF",
+                    fillOpacity: 0.5,
+                    map,
+                    center: coordinates,
+                    radius: 50000,
+            });
+            // Marker popup for my childhood home 
+let infowindow = new google.maps.InfoWindow();
+
+            google.maps.event.addListener(markerl5, 'click', function() {
+                        infowindow.setContent("My Childhood Home, The Old L5 Ranch Headquarters");
+                        infowindow.open(map, markerl5);
+            });
+            markers.push(markerl5);
+        }
+
+
+      window.initMap = initMap;
+
+    </script>
+
     <div style="text-align:center"> 
       <footer>
 <!Contact me form/>
